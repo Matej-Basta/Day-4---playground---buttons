@@ -1,0 +1,73 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 48px;
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-family: sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-left: 48px;
+  padding: 24px 48px;
+  transition: 0.3s;
+}
+
+.ghost {
+  color: #3ca55c;
+  border: #3ca55c solid 2px;
+  background-color: transparent;
+}
+
+.ghost:hover {
+  background-color: #3ca55c;
+  color: white;
+}
+
+.icon {
+  color: white;
+  background-color: #1fa2ff;
+}
+
+span {
+  margin-left: 0.3rem;
+  display: inline-block;
+  transition: 1s ease-out;
+}
+
+.icon:hover span {
+  transform: translate(2rem);
+}
+
+.click {
+  color: white;
+  background-color: #f46b45;
+  box-shadow: 0px 8px #999999;
+  transition: 2s;
+}
+
+.click:active {
+  box-shadow: 0px 8px #666666;
+  transform: translate(0px, 30px);
+}
+
+.gradient {
+  color: white;
+  background: linear-gradient(to right, #dd5e89 0%, #f7bb97 50%, #dd5e89 100%);
+  background-size: 200% auto;
+}
+
+.gradient:hover {
+  background-position: right center;
+}
+
+.disabled {
+  background-color: #ffcc33;
+  opacity: 0.3;
+  cursor: pointer;
+}
